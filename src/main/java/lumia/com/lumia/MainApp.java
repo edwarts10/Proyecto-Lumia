@@ -2,7 +2,7 @@
 package lumia.com.lumia;
 
 import java.sql.Connection;
-import java.sql.SQLException;
+
 
 public class MainApp {
 
@@ -45,9 +45,7 @@ usuarioDAO.listarUsuarios();
          } catch (ClassNotFoundException e) {
             System.out.println("ERROR: No se encontró el conector JDBC");
            e.printStackTrace();
-       // } catch (SQLException e) {
-            System.out.println("ERROR de conexión o SQL:");
-            e.printStackTrace();
+        
         }
     }
 }

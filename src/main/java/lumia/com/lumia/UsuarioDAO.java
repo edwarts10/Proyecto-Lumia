@@ -68,7 +68,7 @@ public Usuario obtenerUsuarioPorCredenciales(String correo, String contraseña) 
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
                 return new Usuario(
-                        rs.getInt("id"),
+                        rs.getInt("id_usuario"),
                         rs.getString("nombre"),
                         rs.getString("correo"),
                         rs.getString("contraseña"),
@@ -83,7 +83,7 @@ public Usuario obtenerUsuarioPorCredenciales(String correo, String contraseña) 
 
     // Validar si un correo ya está registrado
     public boolean existeCorreo(String correo) {
-        String sql = "SELECT id FROM usuario WHERE correo = ?";
+        String sql = "SELECT Id_usuario FROM usuario WHERE correo = ?";
         try (Connection conn = ConexionDB.obtenerConexion();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, correo);

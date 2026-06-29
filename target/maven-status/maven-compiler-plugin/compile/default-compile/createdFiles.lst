@@ -1,5 +1,9 @@
 lumia\com\lumia\MainApp.class
 lumia\com\lumia\ConexionDB.class
+lumia\com\lumia\RegistroServlet.class
+lumia\com\lumia\PruebaConexion.class
+lumia\com\lumia\Conexion.class
+lumia\com\lumia\LoginServlet.class
 lumia\com\lumia\Usuario.class
 lumia\com\lumia\UsuarioDAO.class
-lumia\com\lumia\PruebaConexion.class
+lumia\com\lumia\Estudiante.class

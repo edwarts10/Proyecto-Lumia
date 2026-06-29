@@ -77,7 +77,7 @@ public Usuario (String nombre, String correo,String contraseña, String tipo){
         this.tipo = tipo;
     }
 
-    // Método para imprimir datos del usuario (opcional)
+    // Método para imprimir datos del usuario 
     @Override
     public String toString() {
         return id + " | " + nombre + " | " + correo + " | " + tipo;
